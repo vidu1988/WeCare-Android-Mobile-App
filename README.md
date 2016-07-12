@@ -1,4 +1,4 @@
-# WeCare-Android-Mobile-Application
+# WeCare-Android-Mobile-App
 Food and clothes donation app that connects donors with charity homes.
 
 An app that benefits society by donating food and clothes to charity homes. This app helps match restaurants and individuals with leftover food and clothes with charities in need. Donations are collected from user’s location on their convenient hours. Volunteers can use the app to deliver the food or clothes to charities according to their schedule.
