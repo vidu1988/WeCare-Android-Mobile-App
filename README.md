@@ -7,5 +7,5 @@ This app provides many functionalities. A list of all the parties and their resp
 For donors, you download the app, you can select the food and clothes you want to donate, the charity you want to donate to, your address and a convenient time you want the volunteer to come by. You push the “Save” button, then the selected charity home is notified of your donation. A “goodwill” points system for individuals and restaurants can be managed so that restaurants can be benefited by this app which are willing to donate extra food.
 Charity homes benefit from this app as it helps them to systematically keep track of donors and total items collected in particular time duration. The Charity home which has been selected has access to a volunteer schedule and it can select the volunteer depending on his availability and notifies a volunteer of the pickup scheduled. It’s that easy.
 
-You can find our WeCare app screencast at the following link:
+You can find WeCare app screencast at the following link:
 https://www.youtube.com/watch?v=p8_­t77G88s
