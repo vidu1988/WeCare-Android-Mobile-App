@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1DDD4"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/trophy"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!!"
+        android:id="@+id/buddycontribution"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textSize="20dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points"
+        android:id="@+id/points"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="346dp"
+        android:layout_height="10dp"
+        android:text="Keep using the app to accumulate points!!"
+        android:id="@+id/text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+
+        android:textColor="@color/black"
+
+        android:textSize="20dp"
+
+
+        android:layout_weight="0.26"
+        android:singleLine="false"
+        android:textIsSelectable="false" />
+</LinearLayout>

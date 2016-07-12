@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:background="#F1DDD4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.androidbelieve.drawerwithswipetabs.AddScheduleActivity">
+
+    <Button
+        android:id="@+id/btnChangeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Date"
+        android:background="#00CC99"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Date (M-D-YYYY): "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_gravity="center"
+        android:scaleX="0.9"
+        android:scaleY="0.9" />
+
+    <Button
+        android:id="@+id/btnChangeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Time"
+        android:background="#00CC99"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Time (H:M): "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:id="@+id/timePicker1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Update"
+        android:id="@+id/btnUpdateSchedule"
+        android:layout_weight="1"
+        android:background="#00CC99"
+        android:textColor="#FFFFFF"
+        android:layout_margin="5dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="Done"
+        android:id="@+id/btnDoneAddingSchedule"
+        android:layout_weight="1"
+        android:background="#00CC99"
+        android:textColor="#FFFFFF"
+        android:layout_margin="5dp"
+        />
+    </LinearLayout>
+
+    <!-- FOOTER NAVIGATION -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/footer_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentBottom="false" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#00CC99"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tab1">
+            <ImageButton
+                android:id="@+id/tab1_icon"
+                android:layout_weight="4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_home"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tab1_text"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="Home" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tab2">
+            <ImageButton
+                android:id="@+id/tab2_icon"
+                android:layout_weight="4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_buddy"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tab2_text"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="Buddies" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tab3">
+            <ImageButton
+                android:id="@+id/tab3_icon"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_benefits"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tab3_text"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Benefits" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tab4">
+            <ImageButton
+                android:id="@+id/tab4_icon"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_share"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tab4_text"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Share" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

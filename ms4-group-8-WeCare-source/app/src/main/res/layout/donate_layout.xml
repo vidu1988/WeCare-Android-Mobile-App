@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#F1DDD4">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageView1"
+        android:src="@drawable/foodclothes"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Food"
+                android:id="@+id/textView22"
+                />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:rowCount="8"
+                android:columnCount="2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Weight"
+                    android:id="@+id/textView33" >
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextEnterWeight"
+                    android:inputType="numberSigned"
+                    android:hint="in lbs">
+                </EditText>
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill"
+                    android:id="@+id/textView4" >
+                </TextView>
+
+                <RadioGroup>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2-4 Hours"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill"
+                        android:id="@+id/radioBtn1"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4-6 Hours"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill"
+                        android:id="@+id/radioBtn2"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6-8 Hours"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill"
+                        android:id="@+id/radioBtn3"
+                        />
+
+                </RadioGroup>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="Non Perishable"
+                    android:id="@+id/checkboxPerishable"
+                    />
+
+
+            </GridLayout>
+
+        </LinearLayout>
+        <android.support.v4.widget.Space
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Clothes"
+                android:layout_gravity="center"
+                android:id="@+id/textView2"
+                />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:rowCount="8"
+                android:columnCount="2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter clothes #"
+                    android:id="@+id/textView3" >
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="in integer"
+                    android:id="@+id/editTextEnterNoOfClothes"
+                    android:inputType= "numberSigned" >
+
+                </EditText>
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="Warm"
+                    android:id="@+id/checkboxWarm"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="Cotton"
+                    android:id="@+id/checkboxCotton"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="Shoes"
+                    android:id="@+id/checkboxShoes"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="Blankets"
+                    android:id="@+id/checkboxBlankets"
+                    />
+
+            </GridLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Picture"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PickUp Location"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PickUp Date/Time"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/camera"
+        android:background="#00CC99"
+        android:id="@+id/buttonFoodImage"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@drawable/location_icon"
+        android:text="Pick Up Location"
+        android:background="#00CC99"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:id="@+id/btnLocation"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Pick Up Date/Time"
+        android:layout_margin="5dp"
+        android:src="@drawable/datetime_icon"
+        android:background="#00CC99"
+        android:layout_weight="1"
+        android:id="@+id/btnDate"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Image"
+        android:id="@+id/textPreview"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:adjustViewBounds="true"
+        android:id="@+id/imageView"
+        android:layout_gravity="center">
+        </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Select Charity"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:id="@+id/spinner"
+
+            />
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Send Details"
+            android:layout_gravity="center"
+            android:background="#00CC99"
+            android:textColor="#FFFFFF"
+            android:id="@+id/sendDetails" >
+        </Button>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <!-- FOOTER NAVIGATION -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/footer_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentBottom="false" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#00CC99"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/footer">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tab1">
+            <ImageButton
+                android:id="@+id/tab1_icon"
+                android:layout_weight="4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_home"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tab1_text"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="Home" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tab2">
+            <ImageButton
+                android:id="@+id/tab2_icon"
+                android:layout_weight="4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_buddy"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/tab2_text"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="Buddies" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tab3">
+            <ImageButton
+                android:id="@+id/tab3_icon"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_benefits"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tab3_text"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Benefits" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tab4">
+            <ImageButton
+                android:id="@+id/tab4_icon"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_share"
+                android:clickable="true"
+                android:fontFamily="sans-serif-light" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tab4_text"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Share" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

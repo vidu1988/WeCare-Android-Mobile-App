@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Past Donations"
+          android:id="@+id/nav_item_past_donations"
+          android:icon="@drawable/inbox"/>
+
+    <!--
+    <item android:title="Sent"
+          android:id="@+id/nav_item_sent"
+          android:icon="@drawable/sent"/>
+
+    <item android:title="Drafts"
+          android:id="@+id/nav_item_draft"
+          android:icon="@drawable/draft"/>
+
+   -->
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:title="View Profile"
+                android:icon="@drawable/profile"
+                android:id="@+id/nav_item_view_profile" />
+            <item
+                android:title="Edit Profile"
+                android:icon="@drawable/edit"
+                android:id="@+id/nav_item_edit_profile"
+                />
+
+            <item
+                android:title="Points Earned"
+                android:icon="@drawable/points"
+                android:id="@+id/nav_item_points_earned" />
+        </menu>
+    </item>
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="Change Password"
+              android:icon="@drawable/settings"
+            android:id="@+id/nav_item_settings"/>
+        <item android:title="Logout"
+             android:icon="@drawable/logout"
+             android:id="@+id/nav_item_logout"/>
+    </group>
+
+
+</menu>

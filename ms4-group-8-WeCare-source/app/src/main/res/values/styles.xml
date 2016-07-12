@@ -1,0 +1,19 @@
+<resources>
+
+<!--
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@android:color/holo_orange_dark</item>
+    </style>
+
+    -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#00CC99</item>
+        <item name="colorPrimaryDark">#00CC99</item>
+    </style>
+
+
+</resources>

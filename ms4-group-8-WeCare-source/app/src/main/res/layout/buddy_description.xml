@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1DDD4">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="test tsrt tset"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/BuddyName"
+                android:textSize="20dp"
+
+                />
+
+
+            <ImageView
+                android:layout_width="158dp"
+                android:layout_height="158dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/wecare"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/buddyImage"
+                android:minHeight="280dp"
+                android:minWidth="390dp"
+                android:layout_above="@+id/imageView"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:padding="1dp"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="test tsrt tset"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/address"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sampleTextView"
+                android:isScrollContainer="true"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_gravity="center_horizontal"
+
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

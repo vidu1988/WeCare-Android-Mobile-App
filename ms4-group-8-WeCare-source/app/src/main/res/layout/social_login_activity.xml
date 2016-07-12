@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#F1DDD4">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/wecareicon"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sign in or create an account to use We Care! Once you are signed in you'll have a profile for earning points."
+        android:id="@+id/textView4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up by email address"
+        android:id="@+id/signupButton"
+        android:layout_gravity="center_horizontal"
+        android:background="#00CC99"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:text="Already a member? Sign in!"
+        android:id="@+id/loginButton"
+        android:background="#00CC99"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+
+        android:layout_marginBottom="10dp"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="292dp"
+        android:id="@+id/login_button"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:text="  connect_with_facebook"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvForgotPasswordLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Forgot Password?"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

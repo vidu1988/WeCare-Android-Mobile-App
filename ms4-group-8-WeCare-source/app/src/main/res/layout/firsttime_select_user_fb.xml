@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1DDD4">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/wecareicon"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Are you a Charity or Donor/Volunteer?"
+        android:id="@+id/textView5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/usertype"
+        android:weightSum="1">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charity"
+            android:id="@+id/charity"
+            android:checked="false"
+            android:layout_weight=".5"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donor/Volunteer"
+            android:id="@+id/donor"
+            android:checked="false"
+            android:layout_weight=".5"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Select"
+        android:background="#00CC99"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
